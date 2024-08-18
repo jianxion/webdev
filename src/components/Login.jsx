@@ -28,6 +28,7 @@ function Login({islogin, onsetIslogin}) {
             <label>password</label>
             <input type="password" onChange={(e) => {setPassword(e.target.value)}}/>
             <button onClick={handleSubmit}>Submit</button>
+            <p>username is <strong>jianxion</strong>, password is <strong>123</strong>. Use this pair to log in and test my website!</p>
         </form>
     )
 }
