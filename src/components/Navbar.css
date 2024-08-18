@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px yellow solid;
+    padding: 1rem;
+}
+
+nav span {
+    padding: 0.5rem;
+    cursor: pointer;
+}
