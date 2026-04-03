@@ -25,7 +25,7 @@ const List = () => {
                             <Link to='/singlepage'>
                                 <img src={item.image} />
                                 <h2>{item.title}</h2>
-                                <p><strong>{item.price}</strong></p>
+                                <p><strong>{item.price} $</strong></p>
                             </Link>
                         </li>
                     )

@@ -8,6 +8,9 @@ function Cart() {
     const handleRemoveFromCart = itemid => {
       dispatch({type: 'REMOVE_FROM_CART', payload: itemid});
   }
+    const handleCheckout = () => {
+        dispatch({type: 'CLEAR_CART'});
+    }
 
     console.log(items)
     return (
@@ -21,11 +24,12 @@ function Cart() {
                             <p>{item.title}</p>
                             <p><strong>{item.price}</strong></p>
                             <button onClick={() => {handleRemoveFromCart(item.id)}}>Remove From Cart</button>
+    
                         </li>
                     )
                 })}
             </ul>
-
+            <button onClick={handleCheckout}>Checkout</button>
             
         </div>
     )

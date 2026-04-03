@@ -8,3 +8,7 @@ export const removeFromCart = itemID => ({
     payload: itemID,
 })
 
+export const clearCart = () => ({
+    type: 'CLEAR_CART',
+})
+
